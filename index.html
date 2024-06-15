@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Daniel Holguin</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Daniel Holguin. This page contains the homepage.">
+    <meta name="author" content="Daniel Holguin">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-    <H1>Daniel WDD131</H1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="www.linkedin.com/in/daniel-holguin-delgado" target="_blank">LinkedIn Profile</a></li>
+                <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Favorite Scripture</a></li>
+                <li><a href="#final-project" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Introduction to Web Development</h2>
+            <img src="images/web-development.jpg" alt="Web Development">
+            <p>This section covers the basics of web development, including the structure and purpose of HTML, CSS, and JavaScript. Understanding these technologies is crucial for building modern, dynamic websites.</p>
+            <p>Here are some useful resources to get started:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank">HTML Basics - MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/css/" target="_blank">CSS Tutorial - W3Schools</a></li>
+                <li><a href="https://javascript.info/" target="_blank">JavaScript Guide - JavaScript.info</a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Responsive Web Design</h2>
+            <img src="images/responsive-design.jpg" alt="Responsive Web Design">
+            <p>Responsive web design ensures that your website looks good on all devices, from desktops to mobile phones. This section discusses the principles of responsive design and how to implement them using CSS media queries and flexible layouts.</p>
+            <p>Check out these resources for more information:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank">Responsive Design - MDN Web Docs</a></li>
+                <li><a href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/" target="_blank">Guidelines for Responsive Web Design - Smashing Magazine</a></li>
+                <li><a href="https://www.freecodecamp.org/news/an-ultimate-guide-to-css-media-queries-bfcb2ebf9a7/" target="_blank">Ultimate Guide to CSS Media Queries - freeCodeCamp</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Daniel Holguin. Colombia.</p>
+        <p id="lastModified"></p>
+    </footer>    
+    <script src="scripts/getdates.js"></script>
+    
 </body>
 </html>
