@@ -1,0 +1,128 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@500&display=swap');
+
+/* Apply fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Reset and basic styles */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #45a049;
+    color: #fff;
+    padding: 1em;
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5em;
+}
+
+h2 {
+    text-align: center; /* Optional: Center align the heading */
+    margin-top: 0; /* Ensure no top margin to start at the top */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+figure {
+    margin: 1em 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%; /* Ensures image doesn't exceed its container width */
+    height: auto; /* Ensures image scales proportionally */
+}
+
+
+footer {
+    background-color: #45a049;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Styles for mobile view */
+nav ul {
+    display: none; /* Initially hide the menu items */
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #fff;
+    margin-right: 1em;
+    align-self: center;
+    order: -1;
+    position: absolute;
+    right: 1em; /* Adjust right spacing as needed */
+}
+
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: block; /* Show the hamburger button on mobile */
+    }
+
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    nav ul {
+        display: flex; /* Show the menu items on larger screens */
+        justify-content: flex-end; /* Align items to the right */
+    }
+
+    nav ul li {
+        margin: 0 1em;
+    }
+}
+
+
