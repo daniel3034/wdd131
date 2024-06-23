@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Daniel Holguin</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Daniel Holguin. This page contains info about the country where I was born.">
+    <meta name="author" content="Daniel Holguin">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Colombia</h1>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="hero">
+            <div class="hero-container">
+                <picture>
+                    <source srcset="images/Colombia-larger.webp" media="(min-width: 1000px)" sizes="(min-width: 1200px) 1000px, 100vw">
+                    <source srcset="images/Colombia-medium.webp" media="(min-width: 500px)">
+                    <img src="images/Colombia-small.webp" alt="Colombia" width="500" height="250">
+                </picture>
+            </div>
+        </section>      
+
+        <section id="Data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 1'141.748 km²</p>
+            <p><strong>Population:</strong> 52.21 million</p>
+            <p><strong>Capital:</strong> Bogotá</p>
+            <p><strong>Languages:</strong> Spanish</p>
+            <p><strong>Currency:</strong> Colombian peso (COP)</p>
+            <p><strong>Time Zone:</strong> UTC-5 (Colombia Standard Time)</p>
+            <p><strong>Calling Code:</strong> +57</p>
+            <p><strong>Internet TLD:</strong> .co</p>
+        </section>
+
+        <section id="Weather">
+            <h2>Weather ⛅</h2> <!-- Emoticon for wider view -->
+            <p><strong>Temperature:</strong> 18°C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> 10 km/h</p>
+            <img id="weather-icon" src="images/weather.svg" alt="Partly Cloudy" style="display: none;">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Daniel Holguin. Colombia.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

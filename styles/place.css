@@ -1,0 +1,150 @@
+/* Define global CSS variables for colors */
+:root {
+    --primary-color: #ffcc00; /* Yellow, representing Colombia's vibrant culture */
+    --secondary-color: #003366; /* Dark blue, representing the oceans and rivers */
+    --text-color: #333;
+}
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color); /* Light gray background */
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Main sections */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+h1 {
+    color: var(--primary-color);
+    font-size: 3rem; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+}
+
+h2, h3 {
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Links */
+a {
+    color: var(--secondary-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive images */
+#hero {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #f0f0f0; 
+    padding: 20px; 
+}
+
+.hero-container {
+    max-width: 100%; 
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Weather icon styling for mobile and desktop views */
+#Weather img {
+    display: block; /* Show SVG icon in mobile view */
+}
+
+@media (min-width: 1024px) {
+    /* Adjustments for desktop screens */
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #Data, #Weather {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    #Data {
+        top: 100px;
+        left: 80px;
+        width: calc(40% - 40px); /* Adjust width */
+    }
+
+    #Weather {
+        bottom: 100px;
+        right: 80px;
+        width: calc(40% - 40px); /* Adjust width */
+    }
+
+    /* Hide weather SVG in wider view */
+    #Weather img {
+        display: none;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #ff0000; /* Red to complete the 3 colors of the Colombian flag */
+    color: #fff; /* White text color for contrast */
+    text-align: center; /* Centered text alignment */
+    padding: 10px; /* Padding for spacing */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    position: relative; /* Ensure it's positioned properly in the layout */
+}
+
+/* Styling for the year and last modified date */
+footer p {
+    margin: 5px 0; /* Margin for spacing between paragraphs */
+}
