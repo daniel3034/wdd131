@@ -34,15 +34,15 @@ main {
 section {
     background-color: #fff;
     padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 8px;
+    margin-bottom: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Typography */
 h1 {
     color: var(--primary-color);
-    font-size: 3rem; /* Increase font size */
+    font-size: 4rem; /* Increase font size */
     font-weight: bold; /* Make it bold */
 }
 
@@ -147,4 +147,10 @@ footer {
 /* Styling for the year and last modified date */
 footer p {
     margin: 5px 0; /* Margin for spacing between paragraphs */
+}
+
+#color-frame {
+    background-color: red;
+    height: 80px;
+    width: 100%;
 }
