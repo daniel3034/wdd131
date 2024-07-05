@@ -1,0 +1,154 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@500&display=swap');
+
+/* Apply fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Reset and basic styles */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #45a049;
+    color: #fff;
+    padding: 1em;
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5em;
+}
+
+h2 {
+    text-align: center; /* Optional: Center align the heading */
+    margin-top: 0; /* Ensure no top margin to start at the top */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+footer {
+    background-color: #45a049;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Styles for mobile view */
+nav ul {
+    display: none; /* Initially hide the menu items */
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #fff;
+    margin-right: 1em;
+    align-self: center;
+    order: -1;
+    position: absolute;
+    right: 1em; /* Adjust right spacing as needed */
+}
+
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: block; /* Show the hamburger button on mobile */
+    }
+
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    nav ul {
+        display: flex; /* Show the menu items on larger screens */
+        justify-content: flex-start; /* Align items to the left */
+    }
+
+    nav ul li {
+        margin: 0 1em;
+    }
+}
+
+/* Temple cards styling */
+.temple-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.temple-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.temple-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.temple-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+    }
+}
+
