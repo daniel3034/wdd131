@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals - filtered-temples</title>
+    <style>
+        /* Critical CSS here */
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: blue;
+            color: #fff;
+            padding: 1em;
+        }
+    </style>
     <link rel="stylesheet" href="styles/filtered-temples.css">
-    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 600px)">
+    <!-- <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 600px)"> -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@500&display=swap"></noscript>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Daniel Holguin. This page contains the album temple.">
     <meta name="author" content="Daniel Holguin">
     <script defer src="scripts/filtered-temples.js"></script>
@@ -24,7 +50,7 @@
         </nav>
     </header>
     <main>
-        <!-- <h2>Temples</h2> -->
+        <h2>Temples</h2>
         <div id="temple-container"></div>
     </main>
     <footer>
