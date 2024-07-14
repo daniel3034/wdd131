@@ -21,6 +21,6 @@ function updateReviewCounter() {
 }
 
 // Call the function to update the counter on page load
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     updateReviewCounter();
 });
