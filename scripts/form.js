@@ -6,12 +6,32 @@ document.getElementById("lastModified").textContent = "Last Modified: " + docume
 
 document.addEventListener('DOMContentLoaded', () => {
     const products = [
-        { name: "Product 1" },
-        { name: "Product 2" },
-        { name: "Product 3" },
-        { name: "Product 4" },
-        { name: "Product 5" },
-    ];
+        {
+            id: 'fc-1888',
+            name: "flux capacitor",
+            avgRating: 4.5
+          },
+          {
+            id: 'fc-2050',
+            name: "power laces",
+            avgRating: 4.7
+          },
+          {
+            id: 'fs-1987',
+            name: "time circuits",
+            avgRating: 3.5
+          },
+          {
+            id: 'ac-2000',
+            name: "low voltage reactor",
+            avgRating: 3.9
+          },
+          {
+            id: 'jj-1969',
+            name: "warp equalizer",
+            avgRating: 5.0
+          }
+        ];
 
     const productNameSelect = document.getElementById('productName');
 
