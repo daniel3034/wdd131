@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals</title>
+    <link rel="stylesheet" href="styles/form-small.css">
+    <link rel="stylesheet" href="styles/form-large.css" media="screen and (min-width: 600px)">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Daniel Holguin. This page contains a form example.">
+    <meta name="author" content="Daniel Holguin">
+    <script defer src="scripts/form.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form id="reviewForm" method="get" action="review.html">
+            <label for="productName">Product Name:</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product </option>
+                <!-- Options will be added dynamically by JavaScript -->
+            </select>
+
+            <fieldset>
+                <legend>Rating</legend>
+                <div class="rating">
+                    <input type="radio" id="star1" name="reviewRating" value="1">
+                    <label for="star1" title="1 star">&#9733;</label>
+                    <input type="radio" id="star2" name="reviewRating" value="2">
+                    <label for="star2" title="2 stars">&#9733;&#9733;</label>
+                    <input type="radio" id="star3" name="reviewRating" value="3">
+                    <label for="star3" title="3 stars">&#9733;&#9733;&#9733;</label>
+                    <input type="radio" id="star4" name="reviewRating" value="4">
+                    <label for="star4" title="4 stars">&#9733;&#9733;&#9733;&#9733;</label>
+                    <input type="radio" id="star5" name="reviewRating" value="5" required>
+                    <label for="star5" title="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                </div>
+            </fieldset>
+
+            <label for="installationDate">Date of Installation:</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+
+            <fieldset>
+                <legend>Useful Features</legend>
+                <div class="useful-features">
+                    <input type="checkbox" id="feature1" name="usefulFeatures" value="Durability">
+                    <label for="feature1">Durability</label>
+                    <input type="checkbox" id="feature2" name="usefulFeatures" value="Ease of Use">
+                    <label for="feature2">Ease of Use</label>
+                    <input type="checkbox" id="feature3" name="usefulFeatures" value="Performance">
+                    <label for="feature3">Performance</label>
+                    <input type="checkbox" id="feature4" name="usefulFeatures" value="Design">
+                    <label for="feature4">Design</label>
+                </div>
+            </fieldset>
+
+            <label for="writtenReview">Written Review (Optional)</label>
+            <textarea id="writtenReview" name="writtenReview" rows="4"></textarea>
+
+            <label for="reviewerName">Your Name (Optional)</label>
+            <input type="text" id="reviewerName" name="reviewerName">
+
+            <button type="submit">Post Review</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Daniel Holguin. Colombia.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
