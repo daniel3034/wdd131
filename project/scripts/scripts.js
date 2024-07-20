@@ -32,11 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Form handling
     const contactForm = document.getElementById('contactForm');
-    contactForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const formData = new FormData(contactForm);
-        localStorage.setItem('contactForm', JSON.stringify(Object.fromEntries(formData)));
-        alert('Information submitted successfully!');
-        contactForm.reset();
-    });
+    if (contactForm) {
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const formData = new FormData(contactForm);
+            localStorage.setItem('contactForm', JSON.stringify(Object.fromEntries(formData)));
+            alert('Information submitted successfully!');
+            contactForm.reset();
+        })};
 });
+ 
