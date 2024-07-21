@@ -9,6 +9,42 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Daniel Holguin. This page contains the main part of the website for the online recipe Repository.">
     <meta name="author" content="Daniel Holguin">
     <script defer src="scripts/scripts.js"></script>
+
+        <!-- Preload main CSS and main image -->
+        <link rel="preload" href="styles/styles.css" as="style">
+        <link rel="preload" href="images/main-image.webp" as="image">
+    
+        <!-- Inline Critical CSS -->
+        <style>
+            /* Critical CSS here */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+                background-color: #f8f9fa;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            nav ul {
+                list-style: none;
+                display: flex;
+                gap: 10px;
+                margin: 0;
+                padding: 0;
+            }
+            nav ul li {
+                margin: 0;
+            }
+            nav ul li a {
+                text-decoration: none;
+                color: #007bff;
+            }
+        </style>
 </head>
 
 <body>
